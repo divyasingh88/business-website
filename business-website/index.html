@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Cosmetics | Natural Beauty Products</title>
+    <link rel="stylesheet" href="styles.css">   
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">GLOW<span>Cosmetics</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon" id="cartIcon">
+                <i>🛒</i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Natural Beauty with GLOW Cosmetics</h1>
+                <p>Handcrafted skincare products made with organic ingredients that nourish your skin and respect our planet.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn">Shop Now</a>
+                    <a href="#about" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="About Glow Cosmetics">
+                </div>
+                <div class="about-text">
+                    <h2>Creating Beauty Through Nature</h2>
+                    <p>Founded in 2015, GLOW Cosmetics began with a simple mission: to create skincare products that harness the power of nature without compromising on quality or effectiveness.</p>
+                    <p>Every product in our collection is thoughtfully formulated using organic, sustainably sourced ingredients. We believe that what you put on your skin matters, which is why we never use harmful chemicals, parabens, or synthetic fragrances.</p>
+                    <div class="values">
+                        <div class="value-item">100% Cruelty-Free</div>
+                        <div class="value-item">Vegan</div>
+                        <div class="value-item">Eco-Friendly</div>
+                        <div class="value-item">Natural Ingredients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-container" id="testimonialContainer">
+                    <div class="testimonial">
+                        <div class="testimonial-image">
+                            <img src="/api/placeholder/100/100" alt="Customer 1">
+                        </div>
+                        <p class="testimonial-text">"The Rose Glow Serum has transformed my skin! My complexion is brighter and more even-toned after just two weeks of use. I love how it absorbs quickly without feeling greasy."</p>
+                        <h4 class="testimonial-author">Emma Johnson</h4>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-image">
+                            <img src="/api/placeholder/100/100" alt="Customer 2">
+                        </div>
+                        <p class="testimonial-text">"As someone with sensitive skin, I've always struggled to find products that don't cause irritation. GLOW Cosmetics has been a game-changer for me! The Gentle Cleansing Milk is now my holy grail product."</p>
+                        <h4 class="testimonial-author">Michael Chang</h4>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-image">
+                            <img src="/api/placeholder/100/100" alt="Customer 3">
+                        </div>
+                        <p class="testimonial-text">"I appreciate that GLOW Cosmetics is committed to sustainability. The products are amazing, and knowing that I'm supporting an eco-friendly company makes me feel even better about my purchase!"</p>
+                        <h4 class="testimonial-author">Sophia Rodriguez</h4>
+                    </div>
+                </div>
+                <div class="testimonial-buttons">
+                    <button class="testimonial-btn" id="prevBtn">❮</button>
+                    <button class="testimonial-btn" id="nextBtn">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-list">
+                        <li><i>📍</i> 123 Beauty Lane, Cosmeticville, CA 90210</li>
+                        <li><i>📞</i> (555) 123-4567</li>
+                        <li><i>✉️</i> hello@glowcosmetics.com</li>
+                        <li><i>🕒</i> Monday - Friday: 9am - 6pm</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i>🌐</i></a>
+                        <a href="#"><i>📷</i></a>
+                        <a href="#"><i>🐦</i></a>
+                        <a href="#"><i>📱</i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>GLOW Cosmetics</h3>
+                    <p>Natural, organic skincare products that help you glow from the inside out.</p>
+                    <div class="social-links">
+                        <a href="#"><i>🌐</i></a>
+                        <a href="#"><i>📷</i></a>
+                        <a href="#"><i>🐦</i></a>
+                        <a href="#"><i>📱</i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers and updates on new products.</p>
+                    <form class="newsletter-form">
+                        <input type="email
